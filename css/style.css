@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive;
+    font-weight: 400;
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    padding: 1%;
+}
+
+#title {
+    text-align: center;
+    color: #2d3436;
+}
+
+#score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player, #machine {
+    position: relative;
+    flex-grow: 1;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+#player h2, #machine h2 {
+    margin: 0;
+    padding: 0;
+
+}
+
+#player {
+    background-color: #ff7675;    
+}
+
+#player-name, #machine-name {
+    font-size: 24px;
+}
+
+#machine-name {
+    text-align: right;
+}
+
+#player-points, #machine-points {
+    position: absolute;
+    top: 8px;
+    font-size: 52px;
+}
+
+#player-points {
+    right: 20px;
+}
+
+#player #player-choice, #machine #machine-choice {
+    list-style: none;
+    text-align: center;
+    margin: 30px;
+    padding: 0;
+}
+
+#player #player-choice li, #machine #machine-choice li {
+    display: inline;
+    padding: 0 15px;
+}
+
+#player #player-choice a, #machine #machine-choice a {
+    opacity: .2;
+}
+
+#player #player-choice a:hover, #machine #machine-choice a.selecionado {
+    opacity: 1;             /*selecionado é uma variavel do JavaScript*/ 
+}
+
+#player #player-choice img, #machine #machine-choice img {
+    max-width: 80px;
+}
+
+#machine {
+    background-color: #3498db;
+}
+
+#versus {
+    font-size: 60px;
+    padding: 0 40px;
+}
+
+#message {
+    font-size: 24px;
+    background-color: #636e72;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 1%;
+    padding: 20px;
+}
